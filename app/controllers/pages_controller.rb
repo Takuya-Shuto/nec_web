@@ -6,7 +6,7 @@ class PagesController < ApplicationController
     #表示内容取得
     events = Event.all
     #表示用データ成形
-    @datas = [];
+    @datas = []
     events.each do |event|
       @datas += [
         'title' => event.name ,     

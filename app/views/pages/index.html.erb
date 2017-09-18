@@ -12,3 +12,15 @@
 <% end %>
 <div id='calendar'></div>
 <p>Find me in app/views/pages/index.html.erb</p>
+
+<script type="text/javascript" charset="utf-8">
+  (function() {
+    $(document).ready(function() {
+      $('#calendar').fullCalendar({
+        lang: 'ja',
+        event: <%= raw @datas.to_json %>
+      });
+    });
+
+  }).call(this);
+</script>
