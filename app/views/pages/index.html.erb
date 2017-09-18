@@ -4,3 +4,22 @@
 <p>主に、キャンプやネイチャーゲーム等を通して、自然と人について学んでいます。</p>
 <p>みーんな元気な子供たちと一緒に遊ぶのが大好きだから、いっつもワイワイ!!</p>
 <p>各コンテンツで詳しい紹介がされているので、ぜひご覧下さい。</p>
+
+<h1>Calendar</h1>
+<% if user_signed_in? %>
+  <%= link_to 'イベント新規登録', new_event_path %>
+<% end %>
+<div id='calendar'></div>
+<p>Find me in app/views/pages/index.html.erb</p>
+
+<script type="text/javascript" charset="utf-8">
+  (function() {
+    $(document).ready(function() {
+      $('#calendar').fullCalendar({
+        lang: 'ja',
+        events: <%= raw @datas.to_json %>
+      });
+    });
+
+  }).call(this);
+</script>
