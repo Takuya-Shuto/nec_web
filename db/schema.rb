@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20170918143833) do
 
-  create_table "Events", force: :cascade do |t|
+  create_table "events", force: :cascade do |t|
     t.string "name"
     t.string "message"
     t.datetime "start_time"
