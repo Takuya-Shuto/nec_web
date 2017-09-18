@@ -19,8 +19,3 @@
 //= require moment/ja.js
 //= require fullcalendar
 //= require fullcalendar/lang/ja
-$(document).ready(function() {
-    $('#calendar').fullCalendar({
-       events:window.hoge_datas
-    })
-});

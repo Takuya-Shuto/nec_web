@@ -7,9 +7,6 @@
 
 <h1>Calendar</h1>
 <%= link_to 'イベント新規登録', new_event_path %>
-<%= javascript_tag do %>
-    events: <%= raw @datas.to_json %>
-<% end %>
 <div id='calendar'></div>
 <p>Find me in app/views/pages/index.html.erb</p>
 
@@ -18,7 +15,7 @@
     $(document).ready(function() {
       $('#calendar').fullCalendar({
         lang: 'ja',
-        event: <%= raw @datas.to_json %>
+        events: <%= raw @datas.to_json %>
       });
     });
 
