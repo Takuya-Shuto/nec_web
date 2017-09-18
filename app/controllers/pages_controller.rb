@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
   before_action :sign_in_required, only: [:show]
-  before_action :authenticate_user!, only: [:new]
+  before_action :authenticate_user!, only: [:new, :edit]
 
   def index
     #表示内容取得
