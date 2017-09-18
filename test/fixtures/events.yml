@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  massage: MyString
+  start_time: 2017-09-18 20:39:45
+  end_time: 2017-09-18 20:39:45
+
+two:
+  name: MyString
+  massage: MyString
+  start_time: 2017-09-18 20:39:45
+  end_time: 2017-09-18 20:39:45
