@@ -10,8 +10,8 @@ class PagesController < ApplicationController
     events.each do |event|
       @datas += [
         'title' => event.name ,     
-        'start' => event.start_time,#"2015-12-24 00:00:00"
-        'end'   => event.end_time,  #"2015-12-25 24:00:00"
+        'start' => event.start_time.strftime("%Y-%m-%d %H:%M:%S"), #"2015-12-24 00:00:00"
+        'end'   => event.end_time.strftime("%Y-%m-%d %H:%M:%S"), #"2015-12-25 24:00:00"
         'detail'=> event.message,    #"detail"
         'color' => 'red' ,
         'url'   => event_path(event)
