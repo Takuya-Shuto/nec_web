@@ -41,7 +41,6 @@ gem 'omniauth-twitter'
 # カレンダービュー用
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
-gem 'bootstrap3-datetimepicker-rails', '~> 4.17.37'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
