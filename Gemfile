@@ -33,9 +33,20 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# ページ自動生成
 gem 'devise'
+# twitter連携用
 gem 'omniauth'
 gem 'omniauth-twitter'
+# カレンダービュー用
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
+gem 'bootstrap3-datetimepicker-rails', '~> 4.17.37'
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
+# Use jquery-UI as the JavaScript library
+gem 'jquery-ui-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
