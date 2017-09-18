@@ -6,7 +6,9 @@
 <p>各コンテンツで詳しい紹介がされているので、ぜひご覧下さい。</p>
 
 <h1>Calendar</h1>
-<%= link_to 'イベント新規登録', new_event_path %>
+<% if user_signed_in? %>
+  <%= link_to 'イベント新規登録', new_event_path %>
+<% end %>
 <div id='calendar'></div>
 <p>Find me in app/views/pages/index.html.erb</p>
 
