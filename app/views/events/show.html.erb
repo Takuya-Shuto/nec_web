@@ -19,6 +19,8 @@
   <strong>End time:</strong>
   <%= @event.end_time %>
 </p>
+<% if user_signed_in? %>
+  <%= link_to 'Edit', edit_event_path(@event) %> |
+<% end %>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', root_path %>
